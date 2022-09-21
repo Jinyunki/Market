@@ -5,6 +5,13 @@
       <map>
         <entry key="app/src/main/res/drawable/ic_add_24.xml" value="0.206" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.28782653808593744" />
+        <entry key="app/src/main/res/layout/fragment_add.xml" value="0.29528985507246375" />
+        <entry key="app/src/main/res/layout/fragment_banner.xml" value="0.29528985507246375" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.29528985507246375" />
+        <entry key="app/src/main/res/layout/fragment_my.xml" value="0.29528985507246375" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.29528985507246375" />
+        <entry key="app/src/main/res/layout/fragment_talk.xml" value="0.29528985507246375" />
+        <entry key="app/src/main/res/layout/listitem_banner.xml" value="0.29528985507246375" />
       </map>
     </option>
   </component>
