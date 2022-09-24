@@ -8,8 +8,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import java.util.ArrayList;
-
 public class BannerFragAdapter extends FragmentStateAdapter {
     Integer[] colors = {};
 
@@ -23,6 +21,7 @@ public class BannerFragAdapter extends FragmentStateAdapter {
         Bundle bundle = new Bundle();
         bundle.putInt(BannerFragment.BANNER_POSITION, position);
         bundle.putInt(BannerFragment.BANNER_COLOR, colors[position]);
+
         return BannerFragment.getBannerInstance(bundle);
     }
 

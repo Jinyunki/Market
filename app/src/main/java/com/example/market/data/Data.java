@@ -10,20 +10,34 @@ public class Data {
 
     int bannerColor;
 
-    public static final String BANNER_POSITION_ONE = "BANNER_POSITION_ONE";
-    public static final String BANNER_POSITION_TWO = "BANNER_POSITION_TWO";
-    public static final String BANNER_POSITION_THREE = "BANNER_POSITION_THREE";
-    public static final String BANNER_POSITION_FOUR = "BANNER_POSITION_FOUR";
-    public static final String BANNER_POSITION_FIVE = "BANNER_POSITION_FIVE";
-    public static final String BANNER_POSITION_SIX = "BANNER_POSITION_SIX";
-    public static final String BANNER_POSITION_SEVEN = "BANNER_POSITION_SEVEN";
-    public static final String BANNER_POSITION_EIGHT = "BANNER_POSITION_EIGHT";
+    public static final int HOME_BANNER = 101;
+    public static final int HOME_ICON = 102;
+    public static final int HOME_TEXT = 103;
+    public static final int HOME_PRODUCT = 104;
+    public static final int HOME_BRAND = 105;
+
+
+    public static final int ICON_LIKE = 1011;
+    public static final int ICON_NEW = 1021;
+    public static final int ICON_FEED = 1031;
+    public static final int ICON_PHONE = 1041;
+    public static final int ICON_PLACE = 1051;
+    public static final int ICON_INVITE = 1061;
+    public static final int ICON_TOTAL_MENU = 1071;
+
+    public static final int ICON_JORDAN = 1012;
+    public static final int ICON_SNEAKERS = 1022;
+    public static final int ICON_CAMPING = 1032;
+    public static final int ICON_BIKE = 1042;
+    public static final int ICON_STAR = 1052;
+    public static final int ICON_MOTOR_CYCLE = 1062;
+    public static final int ICON_WATCH = 1072;
+
 
 
     public Data(int bannerColor) {
         this.bannerColor = bannerColor;
     }
-
     public Data() {
     }
 

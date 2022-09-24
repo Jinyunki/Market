@@ -4,14 +4,26 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/ic_add_24.xml" value="0.206" />
+        <entry key="app/src/main/res/drawable/ic_motor_24.xml" value="0.214" />
+        <entry key="app/src/main/res/drawable/ic_phone_24.xml" value="0.214" />
+        <entry key="app/src/main/res/drawable/radius.xml" value="0.2165" />
+        <entry key="app/src/main/res/layout/activity_banner_intent.xml" value="0.29528985507246375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.28782653808593744" />
         <entry key="app/src/main/res/layout/fragment_add.xml" value="0.29528985507246375" />
         <entry key="app/src/main/res/layout/fragment_banner.xml" value="0.29528985507246375" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.29528985507246375" />
         <entry key="app/src/main/res/layout/fragment_my.xml" value="0.29528985507246375" />
+        <entry key="app/src/main/res/layout/fragment_product.xml" value="0.29528985507246375" />
+        <entry key="app/src/main/res/layout/fragment_products.xml" value="0.29528985507246375" />
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.29528985507246375" />
         <entry key="app/src/main/res/layout/fragment_talk.xml" value="0.29528985507246375" />
-        <entry key="app/src/main/res/layout/listitem_banner.xml" value="0.29528985507246375" />
+        <entry key="app/src/main/res/layout/listitem_banner.xml" value="0.4200863930885529" />
+        <entry key="app/src/main/res/layout/listitem_icon.xml" value="0.29528985507246375" />
+        <entry key="app/src/main/res/layout/listitem_icon_item.xml" value="0.29528985507246375" />
+        <entry key="app/src/main/res/layout/listitem_product.xml" value="0.29528985507246375" />
+        <entry key="app/src/main/res/layout/listitem_product_item.xml" value="0.29528985507246375" />
+        <entry key="app/src/main/res/layout/listitem_products.xml" value="0.29528985507246375" />
+        <entry key="app/src/main/res/layout/listitem_text.xml" value="0.29528985507246375" />
       </map>
     </option>
   </component>
