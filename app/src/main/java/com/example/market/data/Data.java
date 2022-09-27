@@ -17,13 +17,11 @@ public class Data {
     public static final int HOME_BRAND = 105;
 
 
-    public static final int ICON_LIKE = 1011;
-    public static final int ICON_NEW = 1021;
-    public static final int ICON_FEED = 1031;
-    public static final int ICON_PHONE = 1041;
-    public static final int ICON_PLACE = 1051;
-    public static final int ICON_INVITE = 1061;
-    public static final int ICON_TOTAL_MENU = 1071;
+    public static final int SEARCH_RECORD = 1011;
+    public static final int SEARCH_TREND = 1021;
+    public static final int SEARCH_RECOMMEND = 1031;
+    public static final int SEARCH_CATEGORY = 1041;
+
 
     public static final int ICON_JORDAN = 1012;
     public static final int ICON_SNEAKERS = 1022;
@@ -33,7 +31,21 @@ public class Data {
     public static final int ICON_MOTOR_CYCLE = 1062;
     public static final int ICON_WATCH = 1072;
 
+    private String record;
 
+
+
+    public Data(String record) {
+        this.record = record;
+    }
+
+    public String getRecord() {
+        return record;
+    }
+
+    public void setRecord(String record) {
+        this.record = record;
+    }
 
     public Data(int bannerColor) {
         this.bannerColor = bannerColor;

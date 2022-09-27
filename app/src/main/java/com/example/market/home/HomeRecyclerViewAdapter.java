@@ -30,10 +30,6 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
     Integer[] colors = {};
 
 
-    private final int TYPE_HEADER = 0;
-    private final int TYPE_ITEM = 1;
-    private final int TYPE_FOOTER = 2;
-
     private String[] tabNames = {"추천상품", "브랜드"};
 
     private HomeRecyclerViewAdapter() {

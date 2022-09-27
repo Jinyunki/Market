@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/iv_brand_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@color/red"/>
+
+        <TextView
+            android:id="@+id/tv_brand_name"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_brand_logo"
+            android:text="RED"
+            android:textSize="20dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_brand_count"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_brand_logo"
+            android:layout_below="@id/tv_brand_name"
+            android:text="red - 144,444개" />
+
+        <TextView
+            android:id="@+id/tv_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="팔로우"
+            android:textColor="#ff0000"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="#22ff0000"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_brand_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="브랜드 모두보기"/>
+
+</LinearLayout>

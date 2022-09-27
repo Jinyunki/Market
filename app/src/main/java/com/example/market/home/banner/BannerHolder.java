@@ -27,7 +27,7 @@ public class BannerHolder extends RecyclerView.ViewHolder {
             @Override
             public void onPageSelected(int position) {
                 super.onPageSelected(position);
-                int currentPage = position+1;
+                int currentPage = position + 1;
                 String bannerCount = currentPage + "/" + pageCount;
                 bannerBinding.tvBannerIndicator.setText(bannerCount);
             }
