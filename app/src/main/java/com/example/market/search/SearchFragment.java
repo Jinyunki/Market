@@ -30,15 +30,10 @@ import java.util.List;
 public class SearchFragment extends Fragment implements SearchAdapter.OnClickCategoryListener {
     ArrayList<String> dataTextList = new ArrayList<>();
 
-    String[] trendItem = {"나이키", "아디다스", "베이프", "슈프림", "바시티", "스투시", "오프화이트", "유니온", "조던", "노스페이스"};
+    String[] trendItem = {};
     ArrayList<RecommendItemData> recommendItemDataList = new ArrayList<>();
-    ArrayList<CategoryData> categoryDataList = new ArrayList<>();
-
-
-    String[] categoryNameList = {"스니커즈","시계","스타굿즈","자전거","오토바이/스쿠터","피규어/인형","닌텐도/NDS/Will","헬스/요가/필라테스","축구","전동킥보드/전동휠","캠핑","카메라/DSLR"};
-    Integer[] categoryIconList = {R.drawable.ic_sneakers_24,R.drawable.ic_hand_watch_24,R.drawable.ic_star_24,R.drawable.ic_bike_24,
-            R.drawable.ic_motor_24,R.drawable.ic_doll_24,R.drawable.ic_nds_will_24,R.drawable.ic_fitness_24,
-            R.drawable.ic_soccer_24,R.drawable.ic_kickboard_24,R.drawable.ic_camping_24,R.drawable.ic_camera_24};
+    String[] categoryNameList = {};
+    Integer[] categoryIconList = {};
 
 
 
@@ -81,11 +76,11 @@ public class SearchFragment extends Fragment implements SearchAdapter.OnClickCat
             }
         });
 
+        setData();
         adapter = new SearchAdapter(trendItem,recommendItemDataList,categoryNameList,categoryIconList);
         adapter.setOnClickCategoryListener(SearchFragment.this);
         binding.rvSearch.setLayoutManager(new LinearLayoutManager(getActivity()));
         binding.rvSearch.setAdapter(adapter);
-        setData();
 
         return binding.getRoot();
     }
@@ -103,6 +98,12 @@ public class SearchFragment extends Fragment implements SearchAdapter.OnClickCat
         recommendItemDataList.add(recommendItemData4);
         recommendItemDataList.add(recommendItemData5);
 
+        trendItem = new String[]{"나이키", "아디다스", "베이프", "슈프림", "바시티", "스투시", "오프화이트", "유니온", "조던", "노스페이스"};
+
+        categoryNameList = new String[]{"스니커즈", "시계", "스타굿즈", "자전거", "오토바이/스쿠터", "피규어/인형", "닌텐도/NDS/Will", "헬스/요가/필라테스", "축구", "전동킥보드/전동휠", "캠핑", "카메라/DSLR"};
+        categoryIconList = new Integer[]{R.drawable.ic_sneakers_24, R.drawable.ic_hand_watch_24, R.drawable.ic_star_24, R.drawable.ic_bike_24,
+                R.drawable.ic_motor_24, R.drawable.ic_doll_24, R.drawable.ic_nds_will_24, R.drawable.ic_fitness_24,
+                R.drawable.ic_soccer_24, R.drawable.ic_kickboard_24, R.drawable.ic_camping_24, R.drawable.ic_camera_24};
     }
 
     @Override
