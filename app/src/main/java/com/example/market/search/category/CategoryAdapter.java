@@ -7,7 +7,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.market.databinding.ListitemCategoryBinding;
-import com.example.market.home.HomeRecyclerViewAdapter;
 import com.example.market.search.SearchAdapter;
 
 import java.util.ArrayList;

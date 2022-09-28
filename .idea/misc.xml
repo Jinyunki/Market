@@ -11,7 +11,7 @@
         <entry key="app/src/main/res/drawable/radius.xml" value="0.2165" />
         <entry key="app/src/main/res/layout/activity_banner_intent.xml" value="0.29528985507246375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.28782653808593744" />
-        <entry key="app/src/main/res/layout/fragment_add.xml" value="0.29528985507246375" />
+        <entry key="app/src/main/res/layout/fragment_add.xml" value="0.36397271640058876" />
         <entry key="app/src/main/res/layout/fragment_banner.xml" value="0.29528985507246375" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.29528985507246375" />
         <entry key="app/src/main/res/layout/fragment_my.xml" value="0.29528985507246375" />
@@ -20,6 +20,7 @@
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.29528985507246375" />
         <entry key="app/src/main/res/layout/fragment_talk.xml" value="0.29528985507246375" />
         <entry key="app/src/main/res/layout/listitem_banner.xml" value="0.4200863930885529" />
+        <entry key="app/src/main/res/layout/listitem_capture.xml" value="0.3061594202898551" />
         <entry key="app/src/main/res/layout/listitem_category.xml" value="0.3061594202898551" />
         <entry key="app/src/main/res/layout/listitem_icon.xml" value="0.29528985507246375" />
         <entry key="app/src/main/res/layout/listitem_icon_item.xml" value="0.29528985507246375" />
