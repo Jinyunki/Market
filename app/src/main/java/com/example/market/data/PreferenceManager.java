@@ -8,7 +8,7 @@ public class PreferenceManager {
     private static final String PREFERENCE_NAME = "memo_preference_name";
 
     /**
-     * [ 공통 ] SharedPreferences 인스턴스를 만들어서 반환해줌 ( 귀찮아서 )
+     * [ 공통 ] SharedPreferences 인스턴스를 만들어서 반환해줌
      */
     private static SharedPreferences getPreference(Context context) {
         return context.getSharedPreferences(PREFERENCE_NAME, Context.MODE_PRIVATE);

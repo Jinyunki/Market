@@ -15,16 +15,13 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.market.R;
-import com.example.market.data.CategoryData;
 import com.example.market.data.Data;
 import com.example.market.data.PreferenceManager;
 import com.example.market.data.RecommendItemData;
 import com.example.market.databinding.FragmentSearchBinding;
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class SearchFragment extends Fragment implements SearchAdapter.OnClickCategoryListener {

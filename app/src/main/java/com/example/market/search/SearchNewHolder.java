@@ -1,13 +1,11 @@
 package com.example.market.search;
 
 import android.content.Context;
-import android.widget.TextView;
 
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.market.data.CategoryData;
 import com.example.market.data.PreferenceManager;
 import com.example.market.data.RecommendItemData;
 import com.example.market.databinding.ListitemSearchNewBinding;

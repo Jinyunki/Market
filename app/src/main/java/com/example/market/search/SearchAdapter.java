@@ -6,11 +6,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.market.data.CategoryData;
 import com.example.market.data.Data;
 import com.example.market.data.RecommendItemData;
 import com.example.market.databinding.ListitemSearchNewBinding;
-import com.example.market.home.HomeRecyclerViewAdapter;
 
 import java.util.ArrayList;
 

@@ -9,8 +9,6 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -27,7 +25,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.market.data.Data;
-import com.example.market.data.DataProduct;
 import com.example.market.databinding.FragmentAddBinding;
 import com.example.market.databinding.ListitemCaptureBinding;
 import com.example.market.room.Product;
@@ -35,7 +32,6 @@ import com.example.market.room.ProductDAO;
 import com.example.market.room.ProductDB;
 
 import java.io.InputStream;
-import java.util.ArrayList;
 
 public class AddFragment extends Fragment {
 
@@ -79,17 +75,32 @@ public class AddFragment extends Fragment {
 
     public void setData() {
 
-        binding.btAdd.setOnClickListener(new View.OnClickListener() {
+        binding.tvAddBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String productName = binding.etProductName.getText().toString();
                 String productCategory = binding.etCategory.getText().toString();
                 String tag = binding.etTag.getText().toString();
                 String productDescription = binding.etDescription.getText().toString();
-                String price = binding.etPrice.getText().toString();
-                int priceValue = Integer.parseInt(price);
+                /**
+                 * int c = 0
+                 * try {
+                 * String b = "123a";
+                 * c = Integer.parseInt(b);
+                 * } catch(NumberFormatException e) {
+                 * c = 100; // 기본값 설정
+                 * }
+                 */
+                int priceValue = 0;
+                try {
+                    String price = binding.etPrice.getText().toString();
+                    priceValue = Integer.parseInt(price);
+                } catch (NumberFormatException e) {
+                    priceValue = 100;
+                }
 
-                if (productName.isEmpty() || productDescription.isEmpty()) {
+
+                if (productName.isEmpty() || productDescription.isEmpty() ) {
                     Toast.makeText(getContext(), "제목과,내용을 입력해 주세요", Toast.LENGTH_SHORT).show();
                     return;
                 }
@@ -110,14 +121,13 @@ public class AddFragment extends Fragment {
                         @Override
                         public void run() {
                             getProductDAO().insertAll(product);
-                            System.out.println("productName : " + productName + ", productCategory : " + productCategory + ", tag : " + tag +
-                                    ", priceValue : " + priceValue + ", productDescription : " + productDescription);
+//                            System.out.println("productName : " + productName + ", productCategory : " + productCategory + ", tag : " + tag +
+//                                    ", priceValue : " + priceValue + ", productDescription : " + productDescription);
                             editTextClear();
                         }
                     }).start();
                 }
             }
-
         });
 
     }

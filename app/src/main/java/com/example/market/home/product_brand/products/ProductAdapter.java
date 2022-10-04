@@ -34,16 +34,13 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ProductViewHolder holder, int position) {
-        String imgUri = "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e24cc9da-a136-4262-987d-ab1a435cade1/air-jordan-1-retro-high-og-shoes-1QP6Gw.png";
-        Glide.with(context).load(imgUri).into(productItemBinding.ivProductItem);
-
-        Product product = productList.get(position);
-        productItemBinding.tvTitle.setText(product.productName);
+        holder.onBind(context,position,productList);
     }
 
     public void addAll(List<Product> productList){
         this.productList.clear();
         this.productList.addAll(productList);
+        this.notifyDataSetChanged();
     }
 
     @Override

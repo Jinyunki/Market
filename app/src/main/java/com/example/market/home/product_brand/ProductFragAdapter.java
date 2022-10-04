@@ -20,6 +20,7 @@ public class ProductFragAdapter extends FragmentStateAdapter {
         Bundle bundle = new Bundle();
         bundle.putInt(ProductFragment.PRODUCT_POSITION,position);
         return ProductFragment.getProductInstance(bundle);
+
     }
 
     @Override

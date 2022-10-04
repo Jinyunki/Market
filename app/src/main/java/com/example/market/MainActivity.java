@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private void initView() {
         adapter = new MainFragAdapter(getSupportFragmentManager(), getLifecycle());
         binding.vpMain.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
 
         new TabLayoutMediator(binding.tabLayout, binding.vpMain, new TabLayoutMediator.TabConfigurationStrategy() {
             @Override

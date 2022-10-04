@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/button_custon.xml" value="0.2195" />
         <entry key="app/src/main/res/drawable/ic_add_24.xml" value="0.206" />
         <entry key="app/src/main/res/drawable/ic_doll_24.xml" value="0.2195" />
         <entry key="app/src/main/res/drawable/ic_motor_24.xml" value="0.214" />

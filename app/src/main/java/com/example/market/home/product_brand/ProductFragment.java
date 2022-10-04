@@ -54,7 +54,6 @@ public class ProductFragment extends Fragment {
                     @Override
                     public void run() {
                         adapter.addAll(tempList);
-                        adapter.notifyDataSetChanged();
                     }
                 });
             }
